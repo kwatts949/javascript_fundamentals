@@ -9,3 +9,7 @@ const getNumberSign = (number) => {
 }
 
 module.exports = getNumberSign;
+
+// const getNumberSign = require('./getNumberSign')
+
+// getNumberSign(3)

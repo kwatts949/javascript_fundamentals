@@ -6,4 +6,4 @@ const multiply = (a, b) => {
 
 module.exports = multiply;
 
-const multipy = require('./multiply');
+// multiply(2, add(4, 4))
