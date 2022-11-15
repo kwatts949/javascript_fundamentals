@@ -5,5 +5,9 @@ const cohort = {
 };
 
 const cohortFunction = (cohort) => {
-  return `${cohort.id} - ${cohort.name} - ${cohort.length} students in this cohort`;
+  return `${cohort.id} - ${cohort.name} - ${cohort.students.length} students in this cohort`;
 }
+
+// cohortFunction(cohort)
+
+// '1234 - Oct2022 - 4 students in this cohort'

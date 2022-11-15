@@ -10,7 +10,8 @@ const fizzBuzz = (number) => {
   }
 }
 
-const fizzbuzzUntil = (number) => 
+const fizzbuzzUntil = (number) => {
   for (let i = 0; i <= number; i++) {
   console.log(fizzBuzz(i))
+  }
 }
