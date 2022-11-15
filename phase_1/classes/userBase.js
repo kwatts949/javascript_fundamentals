@@ -8,7 +8,7 @@ class UserBase {
   }
 
   getNames = () => { // return list of names
-    // call getName for each person in list
+    // gets the array of user instances and calls user.getName for each person in list
     return this.users.map((user) => {
       return user.getName();
     });
