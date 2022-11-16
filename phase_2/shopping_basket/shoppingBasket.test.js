@@ -1,5 +1,4 @@
 const ShoppingBasket = require('./shoppingBasket')
-const Candy = require('./candy')
 
 describe('ShoppingBasket', () => {
   it('adds an item to the basket and returns the total value', () => {

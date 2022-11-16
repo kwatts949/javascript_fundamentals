@@ -17,11 +17,9 @@ class ShoppingBasket {
     this.basketarr.forEach((candy) => {
       totalPrice += candy.getPrice();
     });
-
+    console.log
     return totalPrice - this.discount;
   }
-
- 
 }
 
 module.exports = ShoppingBasket;
