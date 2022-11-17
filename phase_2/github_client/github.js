@@ -17,9 +17,19 @@ class Github {
   }
 }
 
-const client = new GithubClient();
-const hub = new Github(client);
-
-console.log(hub.fetch("sinatra/sinatra"));
-
 module.exports = Github;
+
+/*
+const client = new GithubClient();
+
+// We inject the instance of `GithubClient`:
+const github = new Github(client);
+
+// This method will delegate to `GithubClient.fetchRepositoryData()`
+github.fetch("sinatra/sinatra");
+
+// And after a few moments, this should return a JS object with the repo information.
+setTimeout(() => {
+  console.log(github.getRepoData());
+}, 1000);
+*/
