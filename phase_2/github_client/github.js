@@ -3,12 +3,17 @@ const GithubClient = require("./githubClient");
 class Github {
   constructor(client) {
     this.client = client;
+    this.result;
   }
 
   fetch(repository) {
-    client.fetchRepositoryData("sinatra/sinatra", (result) => {
-      return result;
+    this.client.fetchRepositoryData(repository, (response) => {
+      this.result = response;
     });
+  }
+
+  getRepoData() {
+    return this.result;
   }
 }
 

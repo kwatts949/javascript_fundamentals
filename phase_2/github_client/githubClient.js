@@ -3,9 +3,10 @@ const got = require("got");
 class GithubClient {
   constructor() {}
 
-  async fetchRepositoryData(repository, callback) {
-    const result = await got(`https://api.github.com/repos/${repository}`);
-    callback(JSON.parse(result.body));
+  fetchRepositoryData(repository, callback) {
+    got(`https://api.github.com/repos/${repository}`).then((response) => {
+      callback(JSON.parse(response.body));
+    });
   }
 }
 
