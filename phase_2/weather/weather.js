@@ -28,15 +28,14 @@ class Weather {
 }
 
 module.exports = Weather;
-
 /*
 const client = new WeatherClient();
 const weather = new Weather(client);
 
-weather.fetch("London");
+weather.fetch("Madrid");
 
 //setTimeout(() => {
-//console.log(weather.getWeatherData());
+//  console.log(weather.getWeatherData());
 //}, 1000);
 
 weather.displayWeather();
